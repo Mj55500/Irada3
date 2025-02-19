@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#timer-circle {
+    width: 150px;
+    height: 150px;
+    background: #ff6347; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    border: 5px solid black; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#start-btn {
+    background: green;
+}
+
+#pause-btn {
+    background: yellow;
+    color: black;
+}
+
+#reset-btn {
+    background: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 0; 
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#status-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.work {
+    background: #ff6347; 
+}
+
+.short-break {
+    background: #4caf50; 
+}
+
+.long-break {
+    background: #1e90ff; 
+}
+
+@media (max-width: 600px) {
+    #timer-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 24px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
